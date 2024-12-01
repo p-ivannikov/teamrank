@@ -2,7 +2,9 @@
   "name": "@teamrank/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "tr:dev": "npx nx serve teamrank"
+  },
   "private": true,
   "dependencies": {
     "react": "18.3.1",
