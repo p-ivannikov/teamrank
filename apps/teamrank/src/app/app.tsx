@@ -1,12 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
+import { useState } from 'react';
 
 export function App() {
+  const [count, setCount] = useState(0);
   return (
-    <div>
-      <NxWelcome title="teamrank" />
-    </div>
+    <button type='button' onClick={() => setCount((count) => count + 1)}>
+      Rookie {count}
+    </button>
   );
 }
 
