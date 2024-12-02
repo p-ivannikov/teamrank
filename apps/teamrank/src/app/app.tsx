@@ -5,7 +5,7 @@ import { useState } from 'react';
 export function App() {
   const [count, setCount] = useState(0);
   return (
-    <button type='button' onClick={() => setCount((count) => count + 1)}>
+    <button className='btn' type='button' onClick={() => setCount((count) => count + 1)}>
       Rookie {count}
     </button>
   );
