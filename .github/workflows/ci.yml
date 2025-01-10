@@ -38,7 +38,7 @@ jobs:
         run: npm ci
       - name: Build app1
         run: |
-          nx run teamrank:build
+          npx nx run teamrank:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
