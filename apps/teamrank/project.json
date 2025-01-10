@@ -7,7 +7,7 @@
   "// targets": "to see all targets run: nx show project teamrank --web",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
