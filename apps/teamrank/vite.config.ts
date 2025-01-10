@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import basicSsl from '@vitejs/plugin-basic-ssl';
-// import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   root: __dirname,
@@ -15,7 +15,7 @@ export default defineConfig({
   //   port: 4300,
   //   host: 'localhost',
   // },
-  plugins: [react(), basicSsl()],
+  plugins: [react(), basicSsl(), nxViteTsPaths()],
   build: {
     outDir: '../../dist/apps/teamrank',
     emptyOutDir: true,
@@ -24,5 +24,5 @@ export default defineConfig({
       // transformMixedEsModules: true,
     // },
   },
-  base: './'
+  base: 'https://p-ivannikov.github.io/teamrank/'
 });
