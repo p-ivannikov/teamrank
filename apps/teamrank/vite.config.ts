@@ -24,5 +24,5 @@ export default defineConfig({
       // transformMixedEsModules: true,
     // },
   },
-  base: './'
+  base: 'https://p-ivannikov.github.io/teamrank/'
 });
